@@ -92,6 +92,9 @@ public class MainActivity extends AppCompatActivity {
                             if(infos.get(3).value.toLowerCase().contains("logitech")) {
                                 task = new LogoTask();
                                 task.execute("http://logo.clearbit.com/logitechg.com");
+                            } else if(infos.get(3).value.toLowerCase().contains("toshiba")) {
+                                task = new LogoTask();
+                                task.execute("http://logo.clearbit.com/exploravision.org");
                             } else {
                                 task = new LogoTask();
                                 task.execute("http://logo.clearbit.com/" + infos.get(3).value.toLowerCase().replace(" ", "") + ".com");
